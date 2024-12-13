@@ -1,6 +1,8 @@
-const UserPage = async ({ params }: { params: { id: string } }) => {
+const UserPage = async ({ params }: { params: Promise<{ id: string }> }) => {
+  // Ожидаем разрешения Promise для params
   const { id } = await params;
-  const res = await fetch(`http://localhost:3002/api/users/${id}`, {
+
+  const res = await fetch(`https://api.example.com/api/users/${id}`, {
     cache: "no-store",
   });
   const user = await res.json();
@@ -17,9 +19,6 @@ const UserPage = async ({ params }: { params: { id: string } }) => {
       </p>
       <p>
         Name: <span className='text-blue-500'>{user.name}</span>
-      </p>
-      <p>
-        Email: <span className='text-blue-500'>{user.email}</span>
       </p>
     </div>
   );
