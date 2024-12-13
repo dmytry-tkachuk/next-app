@@ -1,10 +1,11 @@
 const UserPage = async ({ params }: { params: Promise<{ id: string }> }) => {
   // Ожидаем разрешения Promise для params
   const { id } = await params;
-
-  const res = await fetch(`https://api.example.com/api/users/${id}`, {
+  console.log("res", id);
+  const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
     cache: "no-store",
   });
+  console.log("res", res);
   const user = await res.json();
 
   if (!res.ok) {
