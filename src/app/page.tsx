@@ -2,10 +2,10 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { redirect } from "next/navigation";
+import UserProfile from "../components/UserProfile";
 
 const Home = () => {
   const router = useRouter();
-
   return (
     <div>
       Home Page next JS
@@ -26,9 +26,11 @@ const Home = () => {
             redirect
           </button>
         </li>
-
         <li className='hover:underline'>
           <Link href='/users/1'>Go to User 1</Link>
+        </li>
+        <li className='hover:underline'>
+          <UserProfile />
         </li>
       </ul>
     </div>
