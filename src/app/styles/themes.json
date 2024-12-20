@@ -1,0 +1,16 @@
+{
+  "default": {
+    "primary": "#0070f3",
+    "secondary": "#1DB954",
+    "background": "#ffffff",
+    "text": "#000000",
+    "border": "#eaeaea"
+  },
+  "customer1": {
+    "primary": "#ff5733",
+    "secondary": "#c70039",
+    "background": "#f4f4f4",
+    "text": "#333333",
+    "border": "#dddddd"
+  }
+}

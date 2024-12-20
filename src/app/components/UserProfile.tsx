@@ -4,7 +4,7 @@ import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function UserProfile() {
   const { data: session } = useSession();
-  console.log("session", session);
+
   if (session) {
     return (
       <div className='p-4'>

@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.20.3",
+    "@stitches/react": "^1.2.8",
     "next": "15.0.4",
     "next-auth": "^4.24.11",
     "react": "^19.0.0",
