@@ -1,0 +1,21 @@
+.button {
+  display: inline-block;
+  padding: 17px 40px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: $white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid $white;
+  border-radius: 35px;
+  cursor: pointer;
+  width: auto;
+  opacity: 1;
+  transition: all 0.25s;
+  white-space: nowrap;
+  height: 67px;
+  &:hover {
+    opacity: 0.8;
+  }
+}

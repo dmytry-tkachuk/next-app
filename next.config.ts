@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
     includePaths: [path.join(__dirname, 'src/app/styles')],
     additionalData: (content: string, loaderContext: LoaderContext): string => {
       if (loaderContext.resourcePath.endsWith('.scss')) {
-        return `@use "globals";\n${content}`;
+        return `@import "globals";\n${content}`;
       }
       return content;
     },
