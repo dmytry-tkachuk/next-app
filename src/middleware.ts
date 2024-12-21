@@ -1,9 +1,9 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
 // Middleware для проверки авторизации
 export function middleware(request: NextRequest) {
-  const token = request.cookies.get("auth-token"); // Проверяем куку авторизации
+  const token = request.cookies.get('auth-token'); // Проверяем куку авторизации
 
   if (!token) {
     // Если нет токена, перенаправляем на страницу логина

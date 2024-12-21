@@ -1,7 +1,7 @@
-import themeConfig from "@styles/themes.json";
+import themeConfig from '@styles/themes';
 
 export function setTheme() {
-  const themeEnv = process.env.NEXT_PUBLIC_THEME || "default";
+  const themeEnv = process.env.NEXT_PUBLIC_THEME || 'default';
   const theme = themeConfig[themeEnv];
 
   if (!theme) {

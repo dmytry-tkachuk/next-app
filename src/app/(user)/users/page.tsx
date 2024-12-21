@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Users() {
   const sumOfTwo = (a: number, b: number) => a + b;
@@ -7,8 +7,8 @@ export default function Users() {
   return (
     <>
       <div>Users next JS</div>
-      <div className='block'>
-        <Link className='flex' href='/'>
+      <div className="block">
+        <Link className="flex" href="/">
           Home
         </Link>
       </div>
