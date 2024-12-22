@@ -33,3 +33,57 @@
     }
   }
 }
+
+section.menu{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(5, 5, 5, 0.975);
+  *{
+    color:#fff;
+  }
+  .content{
+    width: 1140px;
+    .food-marks{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .m-item{
+        display: flex;
+        align-items:center;
+        gap: 10px;
+      }
+    }
+    h2{
+      margin-top: 50px;
+    }
+    .menu-list{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      gap: 20px;
+      &-content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 45%;
+        h3{
+          margin: 10px 0;
+        }
+      }
+      &__item{
+        display: flex;
+        width: 100%;
+        gap: 30px;
+        justify-content: space-between;
+      }
+      &-item-descr{
+          .components{
+            margin-top: 10px;
+            font-weight: 100;
+            font-size: 14px;
+          }
+      }
+    }
+    
+  }
+}
