@@ -12,7 +12,7 @@
   "dependencies": {
     "@react-google-maps/api": "^2.20.3",
     "@stitches/react": "^1.2.8",
-    "next": "15.0.4",
+    "next": "15.0.7",
     "next-auth": "^4.24.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
